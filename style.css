@@ -1,0 +1,101 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f4f0;
+  color: #292524;
+}
+
+header {
+  padding: 40px 20px;
+  text-align: center;
+  background: #292524;
+  color: white;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+}
+
+header p {
+  color: #e7e5e4;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+button {
+  padding: 13px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #ea580c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c2410c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+#status {
+  margin: 24px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+.cat-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.cat-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.cat-card p {
+  padding: 0 14px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #78716c;
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .cat-card img {
+    height: 200px;
+  }
+}
